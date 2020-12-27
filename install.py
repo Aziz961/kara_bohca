@@ -29,6 +29,7 @@ print()
 print("[1]-Kara Yilan")
 print("[2]-SMS Bomber")
 print("[3]-WhatsApp Bomber")
+print("[4]-Instagram Bruter")
 
 
 os.chdir('..')
@@ -43,4 +44,6 @@ if '2' in a:
     os.system("git clone https://github.com/Nikait/ni_bomber.git")
 if '3' in a:
     os.system("git clone https://github.com/TAIROV1/WBomb.git")
+if '4' in a:
+    os.system("git clone https://github.com/donlachin/insta.git")
 
