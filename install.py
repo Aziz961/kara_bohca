@@ -33,9 +33,9 @@ print("[4]-Instagram Bruter")
 
 
 os.chdir('..')
-if not os.path.isdir("karabohca"):
-     os.mkdir("karabohca")
-os.chdir("karabohca")
+if not os.path.isdir("bohca"):
+     os.mkdir("bohca")
+os.chdir("bohca")
 
 a = input('''Enter Number:''')
 if '1' in a:
