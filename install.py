@@ -56,7 +56,10 @@ if '3' in a:
 if '4' in a:
 	os.system("git clone https://github.com/donlachin/insta.git")
 	os.chdir("insta")
-	os.system("python3 instagram.py sakina_1988 sakina.list -m 0")
+	u=input("Enter uermane:")
+	l=input("Enter List:")
+	m=input("Enter mode:")
+	os.system(f'python3 instagram.py {u} {l} -m {m}')
 
 
 
