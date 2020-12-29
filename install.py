@@ -50,8 +50,6 @@ if '2' in a:
 if '3' in a:
 	os.system("git clone https://github.com/Aziz961/WBomb.git")
 	os.chdir("WBomb")
-	os.system("chmod +x install.sh")
-	os.system("./install.sh")
 	os.system("python3 wbomb.py")
 if '4' in a:
 	os.system("git clone https://github.com/donlachin/insta.git")
