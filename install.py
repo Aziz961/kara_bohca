@@ -44,9 +44,9 @@ if '1' in a:
 	os.chdir("yilan")
 	os.system("./yilan.sh")
 if '2' in a:
-	os.system("git clone https://github.com/Nikait/ni_bomber.git")
-	os.chdir("ni_bomber")
-	os.system("python3 ni_bomber.py")
+	os.system("https://github.com/Aziz961/booms.git")
+	os.chdir("booms")
+	os.system("python3 bomb.py")
 if '3' in a:
 	os.system("git clone https://github.com/Aziz961/WBomb.git")
 	os.chdir("WBomb")
