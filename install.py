@@ -1,5 +1,12 @@
 import os , time
 
+green     = '\033[92m'
+cyan      = '\033[95m'
+bold      = '\033[1m'
+underline = '\033[4m'
+end       = '\033[0m'
+red       = '\033[91m'
+
 files = ['bann/1.txt', 'bann/2.txt', 'bann/3.txt', 'bann/4.txt', 'bann/5.txt', 'bann/6.txt', 'bann/7.txt']
 frames = []
 
@@ -21,14 +28,14 @@ print("██╔═██╗ ██╔══██║██╔══██╗█
 print("██║  ██╗██║  ██║██║  ██║██║  ██║    ██████╔╝╚██████╔╝██║  ██║╚██████╗██║  ██║")
 print("═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝")
 print()
-print("                                BY")
-print("                  Akhmedov Lachin / Tairov Aziz")
+print(f"{bold}{red}                                  BY{end}")
+print(f"{bold}{red}                    Akhmedov Lachin / Tairov Aziz{end}")
 print()
 
-print("[1]-Kara Yilan")
-print("[2]-SMS Bomber")
-print("[3]-WhatsApp Bomber")
-print("[4]-Instagram Bruter")
+print(f"{bold}{green}[1]-Kara Yilan{end}")
+print(f"{bold}{green}[2]-SMS Bomber{end}")
+print(f"{bold}{green}[3]-WhatsApp Bomber{end}")
+print(f"{bold}{green}[4]-Instagram Bruter{end}")
 
 
 
@@ -37,7 +44,7 @@ if not os.path.isdir("bohca"):
 os.chdir("bohca")
 
 #a = int(input())
-a = input('''Enter Number:''')
+a = input(f'''{bold}Enter Number:{end}''')
 if '1' in a:
 	os.system("git clone https://github.com/donlachin/yilan.git")
 	os.chdir("yilan")
@@ -57,8 +64,3 @@ if '4' in a:
 	l=input("Enter List:")
 	m=input("Enter mode:")
 	os.system(f'python3 instagram.py {u} {l} -m {m}')
-
-
-
-
-
