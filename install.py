@@ -1,4 +1,3 @@
-from termcolor import colored
 import os , time
 
 files = ['bann/1.txt', 'bann/2.txt', 'bann/3.txt', 'bann/4.txt', 'bann/5.txt', 'bann/6.txt', 'bann/7.txt']
@@ -10,7 +9,7 @@ for name in files:
         frames.append(f.readlines())
 for i in range(2):
     for frame in frames:
-        print(colored(''.join(frame), 'green'))
+        print(''.join(frame))
         time.sleep(0.2)
         os.system('cls||clear')
 
