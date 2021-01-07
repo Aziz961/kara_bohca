@@ -78,7 +78,7 @@ if a=="ref":
 	os.system("git clone https://github.com/Aziz961/kara_bohca.git")
 	os.chdir("kara_bohca")
 	os.system("python3 install.py")
-if a=="1":
+elif a=="1":
 	os.system("git clone https://github.com/donlachin/yilan.git")
 	os.chdir("yilan")
 	os.system("./yilan.sh")
@@ -105,7 +105,7 @@ elif a=="3 r":
 	os.system("git clone https://github.com/Aziz961/WBomb.git")
 	os.chdir("WBomb")
 	os.system("python3 wbomb.py")
-if a=="4":
+elif a=="4":
 	os.system("git clone https://github.com/donlachin/insta.git")
 	os.chdir("insta")
 	u=input("Enter uermane:")
