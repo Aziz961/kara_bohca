@@ -73,7 +73,7 @@ os.chdir("bohca")
 while True:
 	a = input(f'''{bold}Enter Number:{end}''')
 	if a=="ref":
-		os.chdir()
+		os.chdir('..//..')
 		os.system("rm -rf kara_bohca/")
 		os.system("git clone https://github.com/Aziz961/kara_bohca.git")
 		os.chdir("kara_bohca")
