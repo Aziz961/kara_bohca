@@ -60,6 +60,7 @@ print(f"{bold}{green}[1]-Kara Yilan{end}")
 print(f"{bold}{green}[2]-SMS Bomber{end}")
 print(f"{bold}{green}[3]-WhatsApp Bomber{end}")
 print(f"{bold}{green}[4]-Instagram Bruter{end}")
+print(f"{bold}{green}[5]-Kara Goz{end}")
 
 print(f"{ITALIC}'* r' - reinstall{end}")
 print(f"{ITALIC}'ref' - refresh Kara Bohca{end}")
@@ -116,6 +117,15 @@ while True:
 		l = input("Enter List:")
 		m = input("Enter mode:")
 		os.system(f'python3 instagram.py {u} {l} -m {m}')
+	elif a=="5":
+		os.system("git clone https://github.com/Aziz961/goz.git")
+		os.chdir("goz")
+		os.system("python3 goz.py")
+	elif a=="5 r":
+		os.system("rm -rf goz")
+		os.system("git clone https://github.com/Aziz961/goz.git")
+		os.chdir("goz")
+		os.system("python3 goz.py")
 		break
 	else:
 		print(f"{bold}{red}Invalid command{end}")
