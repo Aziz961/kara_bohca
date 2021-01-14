@@ -71,63 +71,63 @@ if not os.path.isdir("bohca"):
      os.mkdir("bohca")
 os.chdir("bohca")
 
-while True:
-	a = input(f'''{bold}Enter Number:{end}''')
-	if a=="ref":
-		os.system("rm -rf ~/kara_bohca/ && cd && git clone https://github.com/Aziz961/kara_bohca.git && cd ~/kara_bohca && python3 install.py")
-	elif a=="1":
-		os.system("git clone https://github.com/donlachin/yilan.git")
-		os.chdir("yilan")
-		os.system("./yilan.sh")
-	elif a=="1 r":
-		os.system("rm -rf yilan/")
-		os.system("git clone https://github.com/donlachin/yilan.git")
-		os.chdir("yilan")
-		os.system("./yilan.sh")
-	elif a=="2":
-		os.system("git clone https://github.com/Aziz961/booms.git")
-		os.chdir("booms")
-		os.system("python3 bomb.py")
-	elif a=="2 r":
-		os.system("rm -rf booms/")
-		os.system("git clone https://github.com/Aziz961/booms.git")
-		os.chdir("booms")
-		os.system("python3 bomb.py")
-	elif a=="3":
-		os.system("git clone https://github.com/Aziz961/WBomb.git")
-		os.chdir("WBomb")
-		os.system("python3 wbomb.py")
-	elif a=="3 r":
-		os.system("rm -rf WBomb")
-		os.system("git clone https://github.com/Aziz961/WBomb.git")
-		os.chdir("WBomb")
-		os.system("python3 wbomb.py")
-	elif a=="4":
-		os.system("git clone https://github.com/donlachin/insta.git")
-		os.chdir("insta")
-		u=input("Enter uermane:")
-		l=input("Enter List:")
-		m=input("Enter mode:")
-		os.system(f'python3 instagram.py {u} {l} -m {m}')
-	elif a=="4 r":
-		os.system("rm -rf insta")
-		os.system("git clone https://github.com/donlachin/insta.git")
-		os.chdir("insta")
-		u = input("Enter uermane:")
-		l = input("Enter List:")
-		m = input("Enter mode:")
-		os.system(f'python3 instagram.py {u} {l} -m {m}')
-	elif a=="5":
-		os.system("git clone https://github.com/Aziz961/goz.git")
-		os.chdir("goz")
-		os.system("python3 goz.py")
-	elif a=="5 r":
-		os.system("rm -rf goz")
-		os.system("git clone https://github.com/Aziz961/goz.git")
-		os.chdir("goz")
-		os.system("python3 goz.py")
-		break
-	else:
-		print(f"{bold}{red}Invalid command{end}")
+
+a = input(f'''{bold}Enter Number:{end}''')
+if a=="ref":
+	os.system("rm -rf ~/kara_bohca/ && cd && git clone https://github.com/Aziz961/kara_bohca.git && cd ~/kara_bohca && python3 install.py")
+elif a=="1":
+	os.system("git clone https://github.com/donlachin/yilan.git")
+	os.chdir("yilan")
+	os.system("./yilan.sh")
+elif a=="1 r":
+	os.system("rm -rf yilan/")
+	os.system("git clone https://github.com/donlachin/yilan.git")
+	os.chdir("yilan")
+	os.system("./yilan.sh")
+elif a=="2":
+	os.system("git clone https://github.com/Aziz961/booms.git")
+	os.chdir("booms")
+	os.system("python3 bomb.py")
+elif a=="2 r":
+	os.system("rm -rf booms/")
+	os.system("git clone https://github.com/Aziz961/booms.git")
+	os.chdir("booms")
+	os.system("python3 bomb.py")
+elif a=="3":
+	os.system("git clone https://github.com/Aziz961/WBomb.git")
+	os.chdir("WBomb")
+	os.system("python3 wbomb.py")
+elif a=="3 r":
+	os.system("rm -rf WBomb")
+	os.system("git clone https://github.com/Aziz961/WBomb.git")
+	os.chdir("WBomb")
+	os.system("python3 wbomb.py")
+elif a=="4":
+	os.system("git clone https://github.com/donlachin/insta.git")
+	os.chdir("insta")
+	u=input("Enter uermane:")
+	l=input("Enter List:")
+	m=input("Enter mode:")
+	os.system(f'python3 instagram.py {u} {l} -m {m}')
+elif a=="4 r":
+	os.system("rm -rf insta")
+	os.system("git clone https://github.com/donlachin/insta.git")
+	os.chdir("insta")
+	u = input("Enter uermane:")
+	l = input("Enter List:")
+	m = input("Enter mode:")
+	os.system(f'python3 instagram.py {u} {l} -m {m}')
+elif a=="5":
+	os.system("git clone https://github.com/Aziz961/goz.git")
+	os.chdir("goz")
+	os.system("python3 goz.py")
+elif a=="5 r":
+	os.system("rm -rf goz")
+	os.system("git clone https://github.com/Aziz961/goz.git")
+	os.chdir("goz")
+	os.system("python3 goz.py")
+
+else:
+	print(f"{bold}{red}Invalid command{end}")
 
 
